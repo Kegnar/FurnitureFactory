@@ -1,9 +1,10 @@
+using FurnitureFactory.Design;
+
 namespace FurnitureFactory.Factory;
 
-public abstract class Factory
+internal abstract class Factory
 {
-    public abstract ChairFactory CreateChair();
-    public abstract TableFactory CreateTable();
-    public abstract WadrobeFactory CreateWadrobe();
+    public abstract Chair CreateChair();
+    public abstract Table CreateTable();
+    public abstract Wardrobe CreateWardrobe();
 }
-
