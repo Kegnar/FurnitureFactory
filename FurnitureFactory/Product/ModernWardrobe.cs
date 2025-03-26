@@ -1,7 +1,4 @@
-﻿using FurnitureFactory.Design;
+﻿namespace FurnitureFactory.Product;
 
-namespace FurnitureFactory.Product;
-
-internal class ModernWardrobe : Wardrobe
-{
-}
+class ModernWardrobe: Wardrobe   
+{}

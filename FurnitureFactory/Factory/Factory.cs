@@ -1,8 +1,8 @@
-using FurnitureFactory.Design;
+﻿using FurnitureFactory.Product;
 
 namespace FurnitureFactory.Factory;
 
-internal abstract class Factory
+abstract class Factory
 {
     public abstract Chair CreateChair();
     public abstract Table CreateTable();

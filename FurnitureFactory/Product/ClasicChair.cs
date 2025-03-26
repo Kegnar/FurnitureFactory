@@ -1,4 +1,4 @@
 ﻿namespace FurnitureFactory.Product;
 
-class ClassicTable: Table   
+class ClassicChair: Chair   
 {}

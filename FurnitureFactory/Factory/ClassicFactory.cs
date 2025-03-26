@@ -1,18 +1,17 @@
-﻿using FurnitureFactory.Design;
-using FurnitureFactory.Product;
+﻿using FurnitureFactory.Product;
 
 namespace FurnitureFactory.Factory;
 
-internal class ClassicFactory : Factory
+class ClassicFactory: Factory
 {
     public override Chair CreateChair()
     {
         return new ClassicChair();
     }
-
-    public override Table CreateTable()
+         
+    public override Table CreateTable()   
     {
-        return new ClassicTable();
+        return new ClassicTable(); 
     }
 
     public override Wardrobe CreateWardrobe()
