@@ -1,4 +1,10 @@
-﻿namespace FurnitureFactory.Product;
+﻿using FurnitureFactory.Interfaces;
+namespace FurnitureFactory.Product;
 
-class ClassicTable: Table   
-{}
+public class ClassicTable : ITable
+{
+    public void View()
+    {
+        Console.WriteLine("Создан классический стол");
+    }
+}

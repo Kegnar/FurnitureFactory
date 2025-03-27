@@ -1,10 +1,10 @@
 ﻿using FurnitureFactory.Interfaces;
 namespace FurnitureFactory.Product;
 
-public class ModernTable : ITable
+public class ClassicChair : IChair
 {
     public void View()
     {
-        Console.WriteLine("Создан современный стол");
+        Console.WriteLine("Создан классический стул");
     }
 }

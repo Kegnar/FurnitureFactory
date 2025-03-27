@@ -1,4 +1,10 @@
-﻿namespace FurnitureFactory.Product;
+﻿using FurnitureFactory.Interfaces;
+namespace FurnitureFactory.Product;
 
-class ModernChair: Chair   
-{}
+public class ModernChair : IChair
+{
+    public void View()
+    {
+        Console.WriteLine("Создан современный стол");
+    }
+}

@@ -1,24 +1,19 @@
-﻿/*Вариант 2: Реализуйте абстрактную фабрику для создания семейства объектов мебели (например,
-             стульев и столов) в различных стилях (например, современный, классический).
-    Factory - "мебельный комбинат им.Папы Карло" (абстрактный класс)
+﻿using FurnitureFactory.Factory;
 
-TODO:   расписать внутреннюю логику у классов
-*/
 
-using FurnitureFactory.Factory;
-using FurnitureFactory.Product;
+var modernFactory = new ModernFurnitureFactory();
+var modernChair = modernFactory.CreateChair();
+var modernTable = modernFactory.CreateTable();
 
-class Client
-{
-    private Chair _chair;
-    private Table _table;
-    private Wardrobe _wardrobe;
-    public Client(Factory factory)
-    {
-        _table = factory.CreateTable();
-        _chair = factory.CreateChair();
-        _wardrobe = factory.CreateWardrobe();
-    }
-    public void Run()
-    { }
-}
+Console.WriteLine("Современный стиль:");
+modernChair.View();
+modernTable.View();
+
+
+var classicFactory = new ClassicFurnitureFactory();
+var classicChair = classicFactory.CreateChair();
+var classicTable = classicFactory.CreateTable();
+
+Console.WriteLine("\nКлассический стиль:");
+classicChair.View();
+classicTable.View();

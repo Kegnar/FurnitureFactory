@@ -1,20 +1,17 @@
-﻿using FurnitureFactory.Product;
+﻿using FurnitureFactory.Interfaces;
+using FurnitureFactory.Product;
 
 namespace FurnitureFactory.Factory;
 
-class ModernFactory: Factory
+public class ModernFurnitureFactory : IFurnitureFactory
 {
-    public override Chair CreateChair()
+    public IChair CreateChair()
     {
         return new ModernChair();
     }
-         
-    public override Table CreateTable()
+
+    public ITable CreateTable()
     {
         return new ModernTable();
-    }
-    public override Wardrobe CreateWardrobe()
-    {
-        return new ModernWardrobe();
     }
 }
